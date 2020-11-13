@@ -1823,100 +1823,107 @@ code::-webkit-scrollbar-thumb:hover {
 }
 
         .gt-bg-theme-color-first {
-          background: #ffffff!important;
+          background: #f9f9f9!important;
         }
         
         .gt-bg-theme-color-second {
-          background: #ffffff!important;
+          background: #f3f3f3!important;
         }
         
         .gt-bg-content-color-first {
-          background: #5f6169!important;
+          background: #5e5e5e!important;
         }
         
         .gt-bg-content-color-second {
-          background: #999fa7!important;
+          background: #BFBFBF!important;
         }
         
         .gt-bg-accent-color-first {
-          background: #f5bab2!important;
+          background: #8b959f!important;
         }
         
         .gt-bg-accent-color-second {
-          background: RGBA(245,186,178,0.14)!important;
+          background: RGBA(139,149,159,0.14)!important;
         }
         
         .gt-c-theme-color-first {
-          color: #ffffff!important;
+          color: #f9f9f9!important;
         }
         
         .gt-c-theme-color-second {
-          color: #ffffff!important;
+          color: #f3f3f3!important;
         }
         
         .gt-c-content-color-first {
-          color: #5f6169!important;
+          color: #5e5e5e!important;
         }
         
         .gt-c-content-color-second {
-          color: #999fa7!important;
+          color: #BFBFBF!important;
         }
         
         .gt-c-accent-color-first {
-          color: #f5bab2!important;
+          color: #8b959f!important;
         }
         
         .gt-c-accent-color-second {
-          color: RGBA(245,186,178,0.14)!important;
+          color: RGBA(139,149,159,0.14)!important;
         }
         
         body {
-          color: #5f6169!important;
+          color: #5e5e5e!important;
         }
         
         a {
-          color: #f5bab2!important;
+          color: #8b959f!important;
         }
         
         .post-content h1 {
           display: inline-block;
-          color: #5f6169!important;
+          color: #5e5e5e!important;
           position: relative!important;
-          background: linear-gradient(180deg, transparent 75%, RGBA(245,186,178,0.4) 0)!important;
+          background: linear-gradient(180deg, transparent 75%, RGBA(139,149,159,0.4) 0)!important;
         }
         
         .post-content h2 {
           display: inline-block;
-          color: #5f6169!important;
+          color: #5e5e5e!important;
           position: relative!important;
-          background: linear-gradient(180deg, transparent 75%, RGBA(245,186,178,0.4) 0)!important;
+          background: linear-gradient(180deg, transparent 75%, RGBA(139,149,159,0.4) 0)!important;
         }
         
         .gt-a-link {
-          color: #5f6169!important;
+          color: #5e5e5e!important;
           position: relative!important;
-          background: linear-gradient(180deg, transparent 75%, RGBA(245,186,178,0.4) 0)!important;
+          background: linear-gradient(180deg, transparent 75%, RGBA(139,149,159,0.4) 0)!important;
         }
         
         .gt-post-content a {
-          color: #f5bab2!important;
+          color: #8b959f!important;
         }
         
         .gt-post-content blockquote {
-          background: RGBA(245,186,178,0.14)!important;
-          border-color: #f5bab2!important;
+          background: RGBA(139,149,159,0.14)!important;
+          border-color: #8b959f!important;
         }
         
         .gt-post-content code {
-          background: RGBA(245,186,178,0.14)!important;
+          background: RGBA(139,149,159,0.14)!important;
         }
         
         input::placeholder {
-          color: #999fa7!important;
+          color: #BFBFBF!important;
         }
         
         .search-input {
-          color: #5f6169!important;
-          background-color: #ffffff!important;
+          color: #5e5e5e!important;
+          background-color: #f3f3f3!important;
         }
          
+      .footer-main{font-size:12px;padding:24px;max-width:1000px;min-width:1000px;align-self:center;margin:0 auto}
+.footer-main a{color:#343a40!important}
+.footer-main .slogan{padding-bottom:16px}
+.footer-main .social-container{padding-bottom:16px}
+.footer-main .social-container i{padding-left:10px;padding-right:10px;font-size:14px}#bsad-footer{font-size:15px;text-align:center;padding:24px;margin-left:24px;margin-right:24px}#bsad-footer a{background:linear-gradient(180deg,transparent 75%,rgba(77,171,247,.3) 0)!important}@media (max-width:992px){.footer-main{display:none}}
+
+    
