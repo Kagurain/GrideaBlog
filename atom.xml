@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hexo.ink</id>
     <title>💤夜杏</title>
-    <updated>2020-11-14T03:05:36.954Z</updated>
+    <updated>2020-11-14T03:26:04.395Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hexo.ink"/>
     <link rel="self" href="https://hexo.ink/atom.xml"/>
@@ -22,7 +22,8 @@
 <!-- more -->
 <p>解谜完了没有奖品，但是过年会有个有奖品的解谜。<br>
 纯属整的无聊，无聊的解谜无聊的人。<strong>很是简单</strong><br>
-都是脑洞题目，只要你脑洞够大，没有什么做不出来的</p>
+都是脑洞题目，只要你脑洞够大，没有什么做不出来的<br>
+网站在Github Pages，浪费时间打D打C都是徒劳，网站死了Github还得找你查水表</p>
 <p><strong>解谜Write Up将会在下周发布。本次解谜是真的无聊，文章边写边做，记住，所有你看似不可能的都有可能被用上作线索</strong></p>
 <blockquote>
 <p>解谜开始之前我修了修instant.page的<strong>Mixed Content</strong>问题，看着<strong>整洁</strong>多了。确保游戏体验</p>
