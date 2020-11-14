@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hexo.ink</id>
     <title>💤夜杏</title>
-    <updated>2020-11-14T01:57:07.942Z</updated>
+    <updated>2020-11-14T03:04:36.861Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hexo.ink"/>
     <link rel="self" href="https://hexo.ink/atom.xml"/>
@@ -10,6 +10,28 @@
     <logo>https://hexo.ink/images/avatar.png</logo>
     <icon>https://hexo.ink/favicon.ico</icon>
     <rights>All rights reserved 2020, 💤夜杏</rights>
+    <entry>
+        <title type="html"><![CDATA[开站大吉，整个解谜]]></title>
+        <id>https://hexo.ink/11-14riddle/</id>
+        <link href="https://hexo.ink/11-14riddle/">
+        </link>
+        <updated>2020-11-14T01:46:51.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>当你凝视我的时候 游戏已经开始了</strong></p>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>当你凝视我的时候 游戏已经开始了</strong></p>
+<!-- more -->
+<p>解谜完了没有奖品，但是过年会有个有奖品的解谜。<br>
+纯属整的无聊，无聊的解谜无聊的人。<strong>很是简单</strong><br>
+都是脑洞题目，只要你脑洞够大，没有什么做不出来的</p>
+<p><strong>解谜Write Up将会在下周发布。本次解谜是真的无聊，文章边写边做，记住，所有你看似不可能的都有可能被用上作线索</strong></p>
+<blockquote>
+<p>解谜开始之前我修了修instant.page的<strong>Mixed Content</strong>问题，看着<strong>整洁</strong>多了。确保游戏体验</p>
+</blockquote>
+<p>Good Luck~</p>
+<script>
+console.log("特那姪至罰老侄陀俱。侄遠舍諳沙伊道冥能侄怛冥曳梵一不遮伽呐知波實娑至漫呐蒙呐陀侄吉室究冥不蒙");
+</script>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://hexo.ink/hello-gridea/</id>
