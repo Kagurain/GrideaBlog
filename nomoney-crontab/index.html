@@ -1,11 +1,10 @@
 <html>
-
 <head>
     <meta charset="utf-8"/>
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<title>友情链接 - 💤夜杏</title>
+<title>0元实现无服务器笨牛网Cloudflare持续开盾 | 💤夜杏</title>
 
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
@@ -26,12 +25,11 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
 <script async src="https://cdn.jsdelivr.net/gh/Kagurain/StaticLib@1.0/JavaScript/TopButton.js"></script>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
 </head>
-
 <body>
 <div class="main gt-bg-theme-color-first">
-        <div class="main-content">
-            
+    
 <nav class="navbar navbar-expand-lg">
     <div class="navbar-brand">
         <img class="user-avatar" src="/images/avatar.png" alt="头像">
@@ -96,57 +94,104 @@
     </div>
 </nav>
 
-            <div class="post-container">
-                <div class="post-detail">
-                    <article>
-                        <!-- <div class="post-content-wrapper"> -->
-                            <div class="post-content">
-                                <div class="friends-desc">
-                                    <h1 id="一切友链遵循以友为主原则">一切友链遵循以友为主原则</h1>
-<br>
-<br>
-
-                                </div>
-                                <h3 id="linklist">友链列表</h3>
-                                
-                                    
-                                        <div class="friend-box">
-                                            <img class="friend-avatar" src="https://cdn.jsdelivr.net/gh/FutureApple/Web-File@master/images/dCm9.png">
-                                            <div class="flink-info">
-                                                
-                                                        <a class="gt-c-content-color-first" href="https://lo-li.icu" target="_blank">果子の小窝</a>
-                                                        
-                                                <br />
-                                                <div class="flink-info-desc gt-c-content-color-first">
-                                                    Could you tell me together forever.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        <div class="friend-box">
-                                            <img class="friend-avatar" src="https://i.loli.net/2020/11/14/z8KjGU2qFTicnDY.png">
-                                            <div class="flink-info">
-                                                
-                                                        <a class="gt-c-content-color-first" href="https://www.gymxbl.com" target="_blank">孤影墨香</a>
-                                                        
-                                                <br />
-                                                <div class="flink-info-desc gt-c-content-color-first">
-                                                    海内存知己，天涯若比邻
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                
-                            </div>
-                        <!-- </div> -->
-                    </article>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    0元实现无服务器笨牛网Cloudflare持续开盾
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2020-11-21 ·
+                    </time>
+                    
                 </div>
-                
+                <div class="post-content">
+                    <p>确实有免费的Crontab定时服务这一类云厂商的存在.</p>
+<!-- more -->
+<h1 id="前言">前言</h1>
+<p>如题，如何实现<strong>0元实现无服务器笨牛网Cloudflare持续开盾</strong>，是一个问题。<br>
+实现这类功能很简单，我们只需要一个定时任务即可。<br>
+笨牛网的自动开盾功能用到了Crontab中的定时任务。我们换个角度思考，既然没有免费Linux服务器供我们创建监控，那么我们可以找提供Crontab定时服务的云厂商。</p>
+<p>（本文章不含任何恰饭 软广链接 请放心使用。）</p>
+<h1 id="实施">实施</h1>
+<p>有这类服务提供的厂商我尝试找了找<br>
+我找到了 <a href="https://clock.sh/" target="_blank">Clock.sh</a> 和 <a href="https://mrtask.tools/" target="_blank">Task君</a></p>
+<p>既然是要持续开盾，那么我们只需要创建一直访问笨牛开盾API的链接即可。<br>
+Closk.sh 目前支持 Python 和 Node 脚本<br>
+而 Task君则支持PHP LinuxSH dotNet Core 3.X 和 Python<br>
+我只会整PHP和LinuxSH，所以本文只讲Task君。其实任何命令都是一样的实现方式，只不过编写的代码可能会随着环境的变化而不同罢了。</p>
+<p>Task君对于资源限制的要求完全可以满足我们的需求<br>
+<img src="https://i.loli.net/2020/11/21/L7HzfAdSlj4G2c9.png" alt="image.png" loading="lazy"></p>
+<p>登录 注册 创建代码 创建任务 查看执行日志</p>
+<p>以下是持续访问开盾API链接的终端代码 思路上是使用Curl对链接进行访问而输出访问结果<br>
+对笨牛官方脚本深层<s>抄袭</s>改包<s>乱整</s>优化完成</p>
+<pre><code class="language-shell"> #!/bin/sh
+
+echo -e &quot;开启防御规则&quot;  
+url=&quot;https://cdn.bnxb.com/api/?token=KbbocuJMNBUy9dU6giBg%2FTJAV2TxOU3iavncBL%2F64EnKkScnkvCkS37ayfH1wdJpxsjioocn6Q&amp;status=on&quot; 
+cResult=$(curl --insecure -X GET $url )
+echo $cResult
+</code></pre>
+<figure data-type="image" tabindex="1"><img src="https://i.loli.net/2020/11/21/khLIxVlbEO87rnK.png" alt="image.png" loading="lazy"></figure>
+<p>然后创建监控任务</p>
+<figure data-type="image" tabindex="2"><img src="https://i.loli.net/2020/11/21/sKBYZtfXmVo1JGW.png" alt="image.png" loading="lazy"></figure>
+<p>不过在运行的实际过程中他是一直显示执行失败的，我不知道是Task君对于失败的进程是如何做判断的，但是链接是正常访问，盾也是能开的。在对脚本修改了几十万次的时候我终于想开了，为什么能用了还要能执迷不悟呢。所以我就这样顺其自然的屈服了。<br>
+<img src="https://i.loli.net/2020/11/21/ndQXS26WIftO1To.png" alt="image.png" loading="lazy"><br>
+<img src="https://i.loli.net/2020/11/21/a9L6UAjhYzKy35Q.png" alt="image.png" loading="lazy"><br>
+<img src="https://i.loli.net/2020/11/21/s47kpUjmQfl5vI9.png" alt="image.png" loading="lazy"></p>
+<h1 id="结语">结语</h1>
+<p>就算没有持续开盾的需求的话，其他一般Crontab操作也可能对你的工作有很大帮助。这类厂商不仅帮助我们不用免于购买服务器的烦恼，而且还可以运行Linux或其他代码相关实例操作。综上所述，这未免不可是以后一个比较大的发展方向。</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://hexo.ink/1114-kai-zhan-xiao-jie-mi-writeup/" class="post-title gt-a-link">
+                    11.14 开站小解谜 WriteUp
+                </a>
             </div>
+        
 
+        
 
+        
 
+        
             
+<script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+
+<style>
+	div#vcomments{
+		width:100%;
+		max-width: 1000px;
+		padding: 2.5%
+	}
+</style>
+
+
+	<div id="vcomments"></div>
+
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: 'T5SQaEiv6GmRVRgPCPRC9far-MdYXbMMI',
+		appKey: 'qNY1g4MypWRSh16GvhtEsNhx',
+		avatar: '',
+		pageSize: 10,
+		recordIp: true,
+		placeholder: '不要水！不要水！不要水！',
+		visitor: false,
+	});
+</script>
+
+
+        
+
+        
     <div class="footer-info">
         
     </div>
@@ -167,8 +212,7 @@ hljs.initHighlightingOnLoad()
 <script src="https://cdn.jsdelivr.net/gh/Kagurain/StaticLib@2.0/JavaScript/nbnhhsh.user.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/instant.page@5.1.0"></script>
 
-        </div>
     </div>
+</div>
 </body>
-
 </html>
