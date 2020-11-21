@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hexo.ink</id>
     <title>💤夜杏</title>
-    <updated>2020-11-20T13:44:40.416Z</updated>
+    <updated>2020-11-21T05:46:44.355Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hexo.ink"/>
     <link rel="self" href="https://hexo.ink/atom.xml"/>
@@ -38,6 +38,7 @@
 你还真没猜错 这就是QQ号。</p>
 <figure data-type="image" tabindex="4"><img src="https://i.loli.net/2020/11/20/ksIu9OHSgGpWdPz.png" alt="你会倒过来念吗" loading="lazy"></figure>
 <p>他的昵称提示了我们是猪的才倒过来念。所以我们倒过来写QQ</p>
+<p>于是这一关的解法我是这样想的</p>
 <pre><code>https://hexo.ink/ + 1263660032 = False
 https://hexo.ink/ + 1263660032 + 开始谜题地址栏内的riddle = True
 </code></pre>
@@ -79,7 +80,7 @@ https://hexo.ink/ + 1263660032 + 开始谜题地址栏内的riddle = True
 <h1 id="007-十二点是赛场停电的时间">0*07 - 十二点是赛场停电的时间</h1>
 <p>这句话实际上是模仿了一个科普节目制作团队<strong>回形针</strong>在100期时做的一个解谜内的一个线索<br>
 如果你加到了这个 回形针粉色小针交流群 你可以看到过我曾经发过一张相关截图<br>
-**里面包含了一个名为 “Base64 在线编码解码 | Base64 加密解密 - Base64.us”的标签页</p>
+<strong>里面包含了一个名为 “Base64 在线编码解码 | Base64 加密解密 - Base64.us”的标签页</strong></p>
 <p>还需要我怎么说吗？</p>
 <p><strong>原本是打算有人能够做出这个解谜就写一份新年解谜的，只有通过这个解谜才能加入，但很可惜的是没有人<s>参加</s>解谜，所以打算以后人流量大起来再做。那就这样了~</strong></p>
 ]]></content>
