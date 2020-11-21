@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hexo.ink</id>
     <title>💤夜杏</title>
-    <updated>2020-11-21T13:43:49.300Z</updated>
+    <updated>2020-11-21T13:49:50.269Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hexo.ink"/>
     <link rel="self" href="https://hexo.ink/atom.xml"/>
@@ -37,7 +37,7 @@ Closk.sh 目前支持 Python 和 Node 脚本<br>
 <p>登录 注册 创建代码 创建任务 查看执行日志</p>
 <p>以下是持续访问开盾API链接的终端代码 思路上是使用Curl对链接进行访问而输出访问结果<br>
 对笨牛官方脚本深层<s>抄袭</s>改包<s>乱整</s>优化完成</p>
-<pre><code class="language-shell"> #!/bin/sh
+<pre><code class="language-bash"> #!/bin/sh
 
 echo -e &quot;开启防御规则&quot;  
 url=&quot;https://cdn.bnxb.com/api/?token=KbbocuJMNBUy9dU6giBg%2FTJAV2TxOU3iavncBL%2F64EnKkScnkvCkS37ayfH1wdJpxsjioocn6Q&amp;status=on&quot; 
