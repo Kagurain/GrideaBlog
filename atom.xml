@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hexo.ink</id>
     <title>💤夜杏</title>
-    <updated>2020-11-29T07:23:03.530Z</updated>
+    <updated>2020-11-29T07:57:58.236Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hexo.ink"/>
     <link rel="self" href="https://hexo.ink/atom.xml"/>
@@ -10,6 +10,71 @@
     <logo>https://hexo.ink/images/avatar.png</logo>
     <icon>https://hexo.ink/favicon.ico</icon>
     <rights>All rights reserved 2020, 💤夜杏</rights>
+    <entry>
+        <title type="html"><![CDATA[如何使访客科学的访问你的Github Pages]]></title>
+        <id>https://hexo.ink/shi-fang-ke-ke-xue-de-fang-wen-ni-de-github-pages/</id>
+        <link href="https://hexo.ink/shi-fang-ke-ke-xue-de-fang-wen-ni-de-github-pages/">
+        </link>
+        <updated>2020-11-28T09:49:27.000Z</updated>
+        <summary type="html"><![CDATA[<p>改Hosts × 自己整活 √</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>改Hosts × 自己整活 √</p>
+<!-- more -->
+<p>在历史的长河中，对于大部分地区来说Github Pages都是处于502状态的.<br>
+主要原因就是 Github提供Pages服务的二级域名github.io 被某些地区运营商指向了127.0.0.1<br>
+<strong>我们对此一般通俗称为 污染</strong></p>
+<p>本篇文章将会从两个方面入手，详细讲述如何绕过运营商污染，达到二次加速并且顺利访问Github Pages的效果。</p>
+<h1 id="域名白嫖法">域名白嫖法</h1>
+<p>原理：白嫖一些为Github Pages提供的二级域名，通过其自带的CloudFlare自带节点达到云减速的功能，从而成功访问Pages页面</p>
+<p>这里列举两个默认通过CloudFlare托管的域名分发项目<br>
+<a href="https://github.com/js-org/js.org">https://github.com/js-org/js.org</a><br>
+<a href="https://github.com/js-cool/js.cool">https://github.com/js-cool/js.cool</a></p>
+<p>这两个的申请方法几乎一致，网上也有很多申请教程，但是为了方便，<s>我就去扒了一份下来</s>。</p>
+<h2 id="申请过程">申请过程</h2>
+<p>在做好必要的工作（如准备好Pages环境）之后，您便可以Fork上方列出的任意一个项目到自己的仓库。<br>
+完毕，在自己的仓库内打开以<code>USERNAME/js.org</code>命名的仓库，找到<code>cnames_active.js</code>并打开。</p>
+<p>现在先想好你要申请的域名<br>
+如：<strong>kagura.js.org</strong><br>
+现在浏览器中先访问以下，看看是否以使用，使用了就换一个。<br>
+进入<code>cnames_active.js</code>，修改</p>
+<p>将你的域名按照如下格式按照首字母顺序（一定要按照字母顺序）放入相应的行数的最后一行（是不是最后一行其实问题不大）</p>
+<p>就比如kagura.js.org就可以放入k开的最后一行<br>
+然后按照这个格式放入相应的位置</p>
+<pre><code>&quot;kagura&quot;: &quot;kagurain.github.io/kaguraindex&quot;,
+</code></pre>
+<p>其中，<code>kagura</code>是你想申请域名的二级<br>
+<code>kagurain.github.io/kaguraindex</code>是github托管pages的仓库地址<br>
+并且，<strong>一定要记得在后面加一个逗号！</strong> 注意：在后面不要加任何注释！<br>
+如果并不需要CF代理流量，就在后面注释//noCF 当然，这违反了我们Pages代理访问的初衷。</p>
+<p>之后返回你的<code>USERNAME/js.org</code>，点击<code>Pull requests</code>，向js.org发送一个申请<br>
+内容如下：<br>
+标题：<strong>你要申请的域名</strong>，如：xhemj.js.org<br>
+内容：会自动帮你写好，不用更改</p>
+<p>建议直接私有库，因为私有库不会审核pages内容，只会通过，如果不通过那就整个html5up单页就行。<br>
+通过后，需要等待30-60分钟让域名适配好之后才能正常访问！</p>
+<p>本节内容参考文档：<a href="https://xhemj.js.org/#/p/How-to-Use-Js-org-Domain">Xhemj文档</a></p>
+<h1 id="直接加速法">直接加速法</h1>
+<p>原理：第三方服务商直接加速Pages内容（虽然也是走自己的域名）</p>
+<p>这类厂商有很多，目前我只了解到了<a href="https://www.netlify.com/">Netfily</a><br>
+和<a href="https://vercel.com/">Vercel</a> 但是我只用过Vercel，所以本节只讲Vercel。</p>
+<p>并且Vercel提供了now.sh的二级域名，可以去尝试看看</p>
+<h2 id="申请过程-2">申请过程</h2>
+<p>打开Vercel，使用Github账号登录<br>
+<img src="https://7bu.top/2020/08/03/cd8b433b83448.png" alt="image.png" loading="lazy"><br>
+<img src="https://7bu.top/2020/08/03/ac33590d3d080.png" alt="image.png" loading="lazy"><br>
+新建Project<br>
+<img src="https://7bu.top/2020/08/03/6e0ee45f6554e.png" alt="image.png" loading="lazy"><br>
+<img src="https://7bu.top/2020/08/03/d567503f63611.png" alt="image.png" loading="lazy"><br>
+填写对应的github仓库https地址，单击<code>Continue</code><br>
+<img src="https://7bu.top/2020/08/03/3d27e5c63bd3c.png" alt="image.png" loading="lazy"><br>
+此处直接点击<code>Continue</code><br>
+<img src="https://7bu.top/2020/08/03/927171c5d3909.png" alt="image.png" loading="lazy"><br>
+此处可以填写下PROJECT NAME，也可默认，毕竟后面要添加域名。然后点击Deploy，这个<code>Project</code>就建好了</p>
+<p><strong>本节基本照搬了<a href="https://colsrch.cn/posts/56951997/">Colsrch大大</a>的内容</strong></p>
+<h1 id="尾声">尾声</h1>
+<p><s>又水了一篇 好开心</s></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[0元实现无服务器笨牛网Cloudflare持续开盾]]></title>
         <id>https://hexo.ink/nomoney-crontab/</id>
