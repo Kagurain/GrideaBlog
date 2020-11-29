@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hexo.ink</id>
     <title>💤夜杏</title>
-    <updated>2020-11-29T09:03:37.971Z</updated>
+    <updated>2020-11-29T09:11:01.405Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hexo.ink"/>
     <link rel="self" href="https://hexo.ink/atom.xml"/>
@@ -12,8 +12,8 @@
     <rights>All rights reserved 2020, 💤夜杏</rights>
     <entry>
         <title type="html"><![CDATA[如何使访客科学的访问你的Github Pages]]></title>
-        <id>https://hexo.ink/shi-fang-ke-ke-xue-de-fang-wen-ni-de-github-pages/</id>
-        <link href="https://hexo.ink/shi-fang-ke-ke-xue-de-fang-wen-ni-de-github-pages/">
+        <id>https://hexo.ink/ghpages-get/</id>
+        <link href="https://hexo.ink/ghpages-get/">
         </link>
         <updated>2020-11-28T09:49:27.000Z</updated>
         <summary type="html"><![CDATA[<p>改Hosts × 自己整活 √</p>
@@ -123,8 +123,8 @@ echo $cResult
     </entry>
     <entry>
         <title type="html"><![CDATA[11.14 开站小解谜 WriteUp]]></title>
-        <id>https://hexo.ink/1114-kai-zhan-xiao-jie-mi-writeup/</id>
-        <link href="https://hexo.ink/1114-kai-zhan-xiao-jie-mi-writeup/">
+        <id>https://hexo.ink/1114-kai-zhan-xiao-jie-mi-writeups/</id>
+        <link href="https://hexo.ink/1114-kai-zhan-xiao-jie-mi-writeups/">
         </link>
         <updated>2020-11-20T13:04:28.000Z</updated>
         <summary type="html"><![CDATA[<p>唐突了，在本站还未有人气之前还是先不要搞大活动了。没精力，也没有能力。</p>
