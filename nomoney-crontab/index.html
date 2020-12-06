@@ -1,11 +1,11 @@
 <html>
 <head>
-    <meta charset="utf-8"/>
+<meta charset="utf-8"/>
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>0元实现无服务器笨牛网Cloudflare持续开盾 | 💤夜杏</title>
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-<meta name="UpdateTime" content="1607220575660">
+<meta name="UpdateTime" content="1607223014297">
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Kagurain/StaticLib@main/Pics/favicon.ico">
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Kagurain/StaticLib@main/Styles/Blog.css">
@@ -25,105 +25,103 @@
 </head>
 <body>
 <div class="main gt-bg-theme-color-first">
-    
 <nav class="navbar navbar-expand-lg">
-    <div class="navbar-brand">
-        <img class="user-avatar" src="https://cdn.jsdelivr.net/gh/Kagurain/StaticLib@main/Pics/avatar.jpg" alt="头像">
-        <div class="site-name gt-c-content-color-first">
-            💤夜杏
-        </div>
-    </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="navbar-nav mr-auto" style="text-align: center">
-            
-                <div class="nav-item">
-                    
-                        <a href="https://hexo.ink" class="menu gt-a-link">
-                            📍博客
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="https://hexo.ink/archives" class="menu gt-a-link">
-                            📕归档
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="https://hexo.ink/tags" class="menu gt-a-link">
-                            🏷标签
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="https://hexo.ink/says" class="menu gt-a-link">
-                            🎉说说
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="https://hexo.ink/friends" class="menu gt-a-link">
-                            👨‍💻友链
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="https://hexo.ink/about" class="menu gt-a-link">
-                            🙎‍♂️关于
-                        </a>
-                    
-                </div>
-            
-        </div>
-        <div style="text-align: center">
-            <form id="gridea-search-form" style="position: relative" data-update="1607220575660" action="/search/index.html">
-                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
-                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
-            </form>
-        </div>
-    </div>
+<div class="navbar-brand">
+<img class="user-avatar" src="https://cdn.jsdelivr.net/gh/Kagurain/StaticLib@main/Pics/avatar.jpg" alt="头像">
+<div class="site-name gt-c-content-color-first">
+💤夜杏
+</div>
+</div>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<div class="navbar-nav mr-auto" style="text-align: center">
+
+<div class="nav-item">
+
+<a href="https://hexo.ink" class="menu gt-a-link">
+📍博客
+</a>
+
+</div>
+
+<div class="nav-item">
+
+<a href="https://hexo.ink/archives" class="menu gt-a-link">
+📕归档
+</a>
+
+</div>
+
+<div class="nav-item">
+
+<a href="https://hexo.ink/tags" class="menu gt-a-link">
+🏷标签
+</a>
+
+</div>
+
+<div class="nav-item">
+
+<a href="https://hexo.ink/says" class="menu gt-a-link">
+🎉说说
+</a>
+
+</div>
+
+<div class="nav-item">
+
+<a href="https://hexo.ink/friends" class="menu gt-a-link">
+👨‍💻友链
+</a>
+
+</div>
+
+<div class="nav-item">
+
+<a href="https://hexo.ink/about" class="menu gt-a-link">
+🙎‍♂️关于
+</a>
+
+</div>
+
+</div>
+<div style="text-align: center">
+<form id="gridea-search-form" style="position: relative" data-update="1607223014297" action="/search/index.html">
+<input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+<i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+</form>
+</div>
+</div>
 </nav>
 
-    <div class="post-container">
-        <div class="post-detail gt-bg-theme-color-second">
-            <article class="gt-post-content">
-                <h2 class="post-title">
-                    0元实现无服务器笨牛网Cloudflare持续开盾
-                </h2>
-                <div class="post-info">
-                    <time class="post-time gt-c-content-color-first">
-                        · 2020-11-21 ·
-                    </time>
-                    
-                        <a href="https://hexo.ink/j31CmLGv7/" class="post-tags">
-                            # Crontab
-                        </a>
-                    
-                        <a href="https://hexo.ink/YrUS134zao/" class="post-tags">
-                            # 白嫖
-                        </a>
-                    
-                        <a href="https://hexo.ink/vzBS3adoYi/" class="post-tags">
-                            # 笨牛
-                        </a>
-                    
-                </div>
-                <div class="post-content">
-                    <p>确实有免费的Crontab定时服务这一类云厂商的存在.</p>
+<div class="post-container">
+<div class="post-detail gt-bg-theme-color-second">
+<article class="gt-post-content">
+<h2 class="post-title">
+0元实现无服务器笨牛网Cloudflare持续开盾
+</h2>
+<div class="post-info">
+<time class="post-time gt-c-content-color-first">
+2020-11-21 ·
+</time>
+
+<a href="https://hexo.ink/j31CmLGv7/" class="post-tags">
+# Crontab
+</a>
+
+<a href="https://hexo.ink/YrUS134zao/" class="post-tags">
+# 白嫖
+</a>
+
+<a href="https://hexo.ink/vzBS3adoYi/" class="post-tags">
+# 笨牛
+</a>
+
+</div>
+<div class="post-content">
+<p>确实有免费的Crontab定时服务这一类云厂商的存在.</p>
 <!-- more -->
 <h1 id="前言">前言</h1>
 <p>如题，如何实现<strong>0元实现无服务器笨牛网Cloudflare持续开盾</strong>，是一个问题。<br>
@@ -160,50 +158,21 @@ echo $cResult
 <h1 id="结语">结语</h1>
 <p>就算没有持续开盾的需求的话，其他一般Crontab操作也可能对你的工作有很大帮助。这类厂商不仅帮助我们不用免于购买服务器的烦恼，而且还可以运行Linux或其他代码相关实例操作。综上所述，这未免不可是以后一个比较大的发展方向。</p>
 
-                </div>
-            </article>
-        </div>
+</div>
+</article>
+</div>
 
-        
-            <div class="next-post">
-                <div class="next gt-c-content-color-first">下一篇</div>
-                <a href="https://hexo.ink/1114-kai-zhan-xiao-jie-mi-writeups/" class="post-title gt-a-link">
-                    11.14 开站小解谜 WriteUp
-                </a>
-            </div>
-        
-
-        
-
-        
-
-        
-            
-<script src='https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
-
-<style>
-	div#vcomments{
-		width:100%;
-		max-width: 1000px;
-		padding: 2.5%
-	}
-</style>
-
-	<div id="vcomments"></div>
-<script>
-	new Waline({
-		el: '#vcomments',
-        serverURL: 'https://kagurablog-waline-7ek9360b13b727-1301174852.ap-shanghai.service.tcloudbase.com',
-        placeholder: '支持代码高亮，每个IP二十秒内仅能评论一次。',
-		pageSize: '10',
-		highlight: true
-	});
-</script>
+<div class="next-post">
+<div class="next gt-c-content-color-first">下一篇</div>
+<a href="https://hexo.ink/1114-kai-zhan-xiao-jie-mi-writeups/" class="post-title gt-a-link">
+11.14 开站小解谜 WriteUp
+</a>
+</div>
 
 
-        
 
-        <div class="footer-info">
+
+<div class="footer-info">
 
 </div>
 <div class="footer-main">
@@ -216,17 +185,17 @@ Made with 💘 [ 2020.10.31 ]
 </div>
 </div>
 <script>
-hljs.initHighlightingOnLoad()
-</script>
-<script>
 var newDate = new Date();
-        var timestamp = document.getElementsByTagName('meta')['UpdateTime'].content;
-        newDate.setTime(timestamp);
-        console.log(" %c Update Time: " + newDate.toLocaleDateString() + " ", "color: #ffffff; background: #0092ee; padding:5px 0;border-radius:5px;");
+var timestamp = document.getElementsByTagName('meta')['UpdateTime'].content;
+newDate.setTime(timestamp);
+console.log(" %c Update Time: " + newDate.toLocaleDateString() + " ", "color: #ffffff; background: #0092ee; padding:5px 0;border-radius:5px;");
 </script>
 <script src="https://cdn.jsdelivr.net/npm/instant.page@5.1.0"></script>
 
-    </div>
 </div>
+</div>
+<script>
+hljs.initHighlightingOnLoad()
+</script>
 </body>
 </html>
