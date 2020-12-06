@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>0元实现无服务器笨牛网Cloudflare持续开盾 | 💤夜杏</title>
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-<meta name="UpdateTime" content="1607223014297">
+<meta name="UpdateTime" content="1607223579259">
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Kagurain/StaticLib@main/Pics/favicon.ico">
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Kagurain/StaticLib@main/Styles/Blog.css">
@@ -88,7 +88,7 @@
 
 </div>
 <div style="text-align: center">
-<form id="gridea-search-form" style="position: relative" data-update="1607223014297" action="/search/index.html">
+<form id="gridea-search-form" style="position: relative" data-update="1607223579259" action="/search/index.html">
 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
 <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
 </form>
@@ -169,6 +169,29 @@ echo $cResult
 </a>
 </div>
 
+
+
+
+<script src='https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+<style>
+div#vcomments{
+width:100%;
+max-width: 1000px;
+padding: 2.5%
+}
+</style>
+
+<div id="vcomments"></div>
+
+<script>
+new Waline({
+el: '#vcomments',
+serverURL: 'https://kagurablog-waline-7ek9360b13b727-1301174852.ap-shanghai.service.tcloudbase.com',
+placeholder: '支持代码高亮，每个IP二十秒内仅能评论一次。',
+pageSize: '10',
+highlight: true
+});
+</script>
 
 
 
