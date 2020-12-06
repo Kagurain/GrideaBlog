@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>如何使访客科学的访问你的Github Pages | 💤夜杏</title>
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-<meta name="UpdateTime" content="1606641056831">
+<meta name="UpdateTime" content="1607214397503">
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Kagurain/StaticLib@main/Pics/favicon.ico">
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Kagurain/StaticLib@main/Styles/Blog.css">
@@ -90,7 +90,7 @@
             
         </div>
         <div style="text-align: center">
-            <form id="gridea-search-form" style="position: relative" data-update="1606641056831" action="/search/index.html">
+            <form id="gridea-search-form" style="position: relative" data-update="1607214397503" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
                 <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
             </form>
@@ -150,7 +150,7 @@
 <p>原理：第三方服务商直接加速Pages内容（虽然也是走自己的域名）</p>
 <p>这类厂商有很多，目前我只了解到了<a href="https://www.netlify.com/">Netfily</a><br>
 和<a href="https://vercel.com/">Vercel</a> 但是我只用过Vercel，所以本节只讲Vercel。</p>
-<p>并且Vercel提供了now.sh的二级域名，可以去尝试看看</p>
+<p>并且Vercel提供了now.sh的二级域名，在添加域名的时候添加<code>你想要的前缀.now.sh</code>即可</p>
 <h2 id="申请过程-2">申请过程</h2>
 <p>打开Vercel，使用Github账号登录<br>
 <img src="https://7bu.top/2020/08/03/cd8b433b83448.png" alt="image.png" loading="lazy"><br>
@@ -163,6 +163,8 @@
 此处直接点击<code>Continue</code><br>
 <img src="https://7bu.top/2020/08/03/927171c5d3909.png" alt="image.png" loading="lazy"><br>
 此处可以填写下PROJECT NAME，也可默认，毕竟后面要添加域名。然后点击Deploy，这个<code>Project</code>就建好了</p>
+<p>建好之后，你可以将域名直接指向<code>cname.vercel-dns.com</code><br>
+在<code>Setting</code> - <code>Domains</code>里面可以设置，默认域名是强制使用Let's encrypt的SSL证书，且无法自行修改。但是相比通过CloudFlare来说，速度快的不只是一点点~</p>
 <p><strong>本节基本照搬了<a href="https://colsrch.cn/posts/56951997/">Colsrch大大</a>的内容</strong></p>
 <h1 id="尾声">尾声</h1>
 <p><s>又水了一篇 好开心</s></p>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hexo.ink</id>
     <title>💤夜杏</title>
-    <updated>2020-11-29T09:11:01.405Z</updated>
+    <updated>2020-12-06T00:26:43.101Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hexo.ink"/>
     <link rel="self" href="https://hexo.ink/atom.xml"/>
@@ -57,7 +57,7 @@
 <p>原理：第三方服务商直接加速Pages内容（虽然也是走自己的域名）</p>
 <p>这类厂商有很多，目前我只了解到了<a href="https://www.netlify.com/">Netfily</a><br>
 和<a href="https://vercel.com/">Vercel</a> 但是我只用过Vercel，所以本节只讲Vercel。</p>
-<p>并且Vercel提供了now.sh的二级域名，可以去尝试看看</p>
+<p>并且Vercel提供了now.sh的二级域名，在添加域名的时候添加<code>你想要的前缀.now.sh</code>即可</p>
 <h2 id="申请过程-2">申请过程</h2>
 <p>打开Vercel，使用Github账号登录<br>
 <img src="https://7bu.top/2020/08/03/cd8b433b83448.png" alt="image.png" loading="lazy"><br>
@@ -70,6 +70,8 @@
 此处直接点击<code>Continue</code><br>
 <img src="https://7bu.top/2020/08/03/927171c5d3909.png" alt="image.png" loading="lazy"><br>
 此处可以填写下PROJECT NAME，也可默认，毕竟后面要添加域名。然后点击Deploy，这个<code>Project</code>就建好了</p>
+<p>建好之后，你可以将域名直接指向<code>cname.vercel-dns.com</code><br>
+在<code>Setting</code> - <code>Domains</code>里面可以设置，默认域名是强制使用Let's encrypt的SSL证书，且无法自行修改。但是相比通过CloudFlare来说，速度快的不只是一点点~</p>
 <p><strong>本节基本照搬了<a href="https://colsrch.cn/posts/56951997/">Colsrch大大</a>的内容</strong></p>
 <h1 id="尾声">尾声</h1>
 <p><s>又水了一篇 好开心</s></p>
