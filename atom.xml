@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hexo.ink</id>
     <title>💤夜杏</title>
-    <updated>2020-12-13T02:06:44.672Z</updated>
+    <updated>2020-12-13T02:10:22.777Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hexo.ink"/>
     <link rel="self" href="https://hexo.ink/atom.xml"/>
@@ -23,6 +23,7 @@
 <h1 id="前言">前言</h1>
 <p>对于评论系统的选择，大部分的用途在于静态网页活着静态博客等场面需要使用。本文总结了博主所知道的各个评论系统的优缺点，方便大家迅速找到适合自己的评论系统。</p>
 <h1 id="总览">总览</h1>
+<p>各个 我所知的评论系统介绍，优缺点.</p>
 <h2 id="valine">Valine</h2>
 <p>Valine算得上是评论界的老大哥了。反正据我所认知范围内有超过70%以上的朋友在使用这个系统。<br>
 <a href="https://valine.js.org/">官网</a>对于Valine的介绍是 快速、安全、Emoji 😉、无后端实现、MarkDown 全语法支持、轻量易用</p>
