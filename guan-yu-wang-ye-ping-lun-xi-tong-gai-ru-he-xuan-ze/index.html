@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Hello Gridea | 💤夜杏</title>
+<title>关于网页评论系统该如何选择 | 💤夜杏</title>
 <meta charset="utf-8"/>
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -94,43 +94,111 @@
 <div class="post-detail gt-bg-theme-color-second">
 <article class="gt-post-content">
 <h2 class="post-title">
-Hello Gridea
+关于网页评论系统该如何选择
 </h2>
 <div class="post-info">
 <time class="post-time gt-c-content-color-first">
-2018-12-12 ·
+2020-12-12 ·
 </time>
-
-<a href="https://hexo.ink/-xBv3p9BQ/" class="post-tags">
-# Gridea
-</a>
 
 </div>
 <div class="post-content">
-<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<p>在开始前突然就想起了以前写博客的时候.怀念当年的Typecho，当年的人和事，当年的最初.</p>
 <!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+<h1 id="前言">前言</h1>
+<p>对于评论系统的选择，大部分的用途在于静态网页活着静态博客等场面需要使用。本文总结了博主所知道的各个评论系统的优缺点，方便大家迅速找到适合自己的评论系统。</p>
+<h1 id="总览">总览</h1>
+<h2 id="valine">Valine</h2>
+<p>Valine算得上是评论界的老大哥了。反正据我所认知范围内有超过70%以上的朋友在使用这个系统。<br>
+<a href="https://valine.js.org/">官网</a>对于Valine的介绍是 快速、安全、Emoji 😉、无后端实现、MarkDown 全语法支持、轻量易用</p>
+<ul>
+<li>优点
+<ul>
+<li>有丰富的社区环境，更多的改造版本（如Valine-Admin这些特别有帮助的repo）</li>
+<li>搭建是完全免费的，托管在LeanCloud上你可以完全白嫖LC的服务去搭建系统</li>
+<li>高度自定义的环境，前端拥有着极多的配置函数可以提高个性化</li>
+<li>除了改造版本，还有众多基于Valine的衍生系统，很大程度上都解决了Valine上一些方面的不足</li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>由于用户量庞大，并且LeanCloud的配置信息直接暴露在前端，依旧很大程度上有安全问题的不足</li>
+<li>举几个Valine的漏洞例子：任意修改访问量 XSS问题 隐私泄露等<br>
+<img src="https://cdn.jsdelivr.net/gh/Kagurain/StaticLib@main/Pics/20201213094620.png" alt="" loading="lazy"></li>
+</ul>
+</li>
+</ul>
+<h2 id="waline">Waline</h2>
+<p>Valine的衍生版本，目前本站在用。<a href="https://waline.js.org/">官网</a>对于Waline的介绍是快速、真·安全、Markdown 语法支持、轻量易用、免费部署</p>
+<ul>
+<li>优点
+<ul>
+<li>直接给Valine加了一层服务端，解决了Valine的所有安全问题。</li>
+<li>开发者是个很负责任而且脾气好的大佬，有什么问题都会给你解决到位。</li>
+<li>不仅仅是支持LeanCloud部署，还支持CloudBase。即将支持AWS, GCP, Azure 部署支持</li>
+<li>还能上数据库评论支持 例如MySQL, MongoDB, SQLite, PostgreSQL</li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>由于Valine在1.4.0后不再提供src内容，所以Waline能复现的前端配置功能较少</li>
+<li>多了一层服务端则代表了站长要考虑两个地方的相应速度问题：站点和评论服务端<br>
+<strong>图就不附上了，具体例子可以参考本站</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="disqusdisqusjs">Disqus+DisqusJS</h2>
+<p>Disqus也是老大哥了，而<a href="https://disqusjs.skk.moe">DisqusJS</a>使用 Disqus API 渲染评论列表,是为了解决Disqus在境内被墙问题而研发出来的。</p>
+<blockquote>
+<p>DisqusJS 提供一个纯前端的、不依赖后端服务器的 Disqus 评论基础模式。</p>
+</blockquote>
+<ul>
+<li>优点
+<ul>
+<li>和其他系统一样内置了代码高亮。</li>
+<li>查看评论直接调用Disqus API，无需经过Disqus避免被墙</li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>查看评论无需扶墙，但是回复评论需要</li>
+<li>不支持MarkDown，一切都需要HTML解决。<br>
+<img src="https://cdn.jsdelivr.net/gh/Kagurain/StaticLib@main/Pics/20201213100552.png" alt="" loading="lazy"><br>
+<s>来自某位大佬博客的评论截的图</s></li>
+</ul>
+</li>
+</ul>
+<h2 id="twikoo">Twikoo</h2>
+<p>一个简洁、安全、免费的静态网站评论系统，基于腾讯云开发 <a href="https://twikoo.js.org/">官网</a>对此的介绍是免费搭建、隐私安全、支持邮件与微信通知、支持反垃圾评论</p>
+<ul>
+<li>优点
+<ul>
+<li>非常的好看，应该是这四个里面最好看的一个评论系统</li>
+<li>Admin后台直接在前端，避免再去打开多几个标签页去管理评论数据，方便站长。</li>
+<li>仅支持Tencent CloudBase部署，每个腾讯云用户都可以享受一个&quot;完全免费&quot;的实例</li>
+<li>无需类似Valine-Admin的改造版本即可实现QQ邮箱显示QQ评论</li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>未完全支持MarkDown，不支持表情包和Emoji。</li>
+<li>测试版（0.x）暂不兼容 IE11 | 正式版（1.0）会兼容 IE1<br>
+<img src="https://cdn.jsdelivr.net/gh/Kagurain/StaticLib@main/Pics/20201213100513.png" alt="" loading="lazy"></li>
+</ul>
+</li>
+</ul>
+<h1 id="结语">结语</h1>
+<p>目前就知道这么多了，虽然想写MiniValine的，但是没有用过就放弃了。如果有什么还好的评论系统欢迎在评论区内与我共通过探讨~</p>
 
 </div>
 </article>
+</div>
+
+<div class="next-post">
+<div class="next gt-c-content-color-first">下一篇</div>
+<a href="https://hexo.ink/ghpages-get/" class="post-title gt-a-link">
+如何使访客科学的访问你的Github Pages
+</a>
 </div>
 
 
