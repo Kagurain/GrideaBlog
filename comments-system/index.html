@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>0元实现无服务器笨牛网Cloudflare持续开盾 | 💤夜杏</title>
+<title>关于网页评论系统该如何选择 | 💤夜杏</title>
 <meta charset="utf-8"/>
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -94,63 +94,114 @@
 <div class="post-detail gt-bg-theme-color-second">
 <article class="gt-post-content">
 <h2 class="post-title">
-0元实现无服务器笨牛网Cloudflare持续开盾
+关于网页评论系统该如何选择
 </h2>
 <div class="post-info">
 <time class="post-time gt-c-content-color-first">
-2020-11-21 ·
+2020-12-12 ·
 </time>
 
-<a href="https://hexo.ink/j31CmLGv7/" class="post-tags">
-# Crontab
+<a href="https://hexo.ink/O7-o7zK8NJ/" class="post-tags">
+# 静态网页
 </a>
 
-<a href="https://hexo.ink/YrUS134zao/" class="post-tags">
-# 白嫖
+<a href="https://hexo.ink/LssqrP3XvO/" class="post-tags">
+# 数据安全
 </a>
 
-<a href="https://hexo.ink/vzBS3adoYi/" class="post-tags">
-# 笨牛
+<a href="https://hexo.ink/U6OfqrRnuZ/" class="post-tags">
+# 评论系统
 </a>
 
 </div>
 <div class="post-content">
-<p>确实有免费的Crontab定时服务这一类云厂商的存在.</p>
+<p>在开始前突然就想起了以前写博客的时候.怀念当年的Typecho，当年的人和事，当年的最初.</p>
 <!-- more -->
 <h1 id="前言">前言</h1>
-<p>如题，如何实现<strong>0元实现无服务器笨牛网Cloudflare持续开盾</strong>，是一个问题。<br>
-实现这类功能很简单，我们只需要一个定时任务即可。<br>
-笨牛网的自动开盾功能用到了Crontab中的定时任务。我们换个角度思考，既然没有免费Linux服务器供我们创建监控，那么我们可以找提供Crontab定时服务的云厂商。</p>
-<p>（本文章不含任何恰饭 软广链接 请放心使用。）</p>
-<h1 id="实施">实施</h1>
-<p>有这类服务提供的厂商我尝试找了找<br>
-我找到了 <a href="https://clock.sh/" target="_blank">Clock.sh</a> 和 <a href="https://mrtask.tools/" target="_blank">Task君</a></p>
-<p>既然是要持续开盾，那么我们只需要创建一直访问笨牛开盾API的链接即可。<br>
-Closk.sh 目前支持 Python 和 Node 脚本<br>
-而 Task君则支持PHP LinuxSH dotNet Core 3.X 和 Python<br>
-我只会整PHP和LinuxSH，所以本文只讲Task君。其实任何命令都是一样的实现方式，只不过编写的代码可能会随着环境的变化而不同罢了。</p>
-<p>Task君对于资源限制的要求完全可以满足我们的需求<br>
-<img src="https://cdn.jsdelivr.net/gh/Kagurain/StaticLib@main/Pics/L7HzfAdSlj4G2c9.png" alt="image.png" loading="lazy"></p>
-<p>登录 注册 创建代码 创建任务 查看执行日志</p>
-<p>以下是持续访问开盾API链接的终端代码 思路上是使用Curl对链接进行访问而输出访问结果<br>
-对笨牛官方脚本深层<s>抄袭</s>改包<s>乱整</s>优化完成<br>
-<strong>输出1的时候即为成功 输出访问频繁不用多加理会</strong></p>
-<pre><code class="language-bash"> #!/bin/sh
-
-echo -e &quot;开启防御规则&quot;  
-url=&quot;https://cdn.bnxb.com/api/?token=KbbocuJMNBUy9dU6giBg%2FTJAV2TxOU3iavncBL%2F64EnKkScnkvCkS37ayfH1wdJpxsjioocn6Q&amp;status=on&quot; 
-cResult=$(curl --insecure -X GET $url )
-echo $cResult
-</code></pre>
-<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/Kagurain/StaticLib@main/Pics/khLIxVlbEO87rnK.png" alt="image.png" loading="lazy"></figure>
-<p>然后创建监控任务</p>
-<figure data-type="image" tabindex="2"><img src="https://cdn.jsdelivr.net/gh/Kagurain/StaticLib@main/Pics/sKBYZtfXmVo1JGW.png" alt="image.png" loading="lazy"></figure>
-<p>不过在运行的实际过程中他是一直显示执行失败的，我不知道是Task君对于失败的进程是如何做判断的，但是链接是正常访问，盾也是能开的。在对脚本修改了几十万次的时候我终于想开了，为什么能用了还要能执迷不悟呢。所以我就这样顺其自然的屈服了。<br>
-<img src="https://cdn.jsdelivr.net/gh/Kagurain/StaticLib@main/Pics/ndQXS26WIftO1To.png" alt="image.png" loading="lazy"><br>
-<img src="https://cdn.jsdelivr.net/gh/Kagurain/StaticLib@main/Pics/a9L6UAjhYzKy35Q.png" alt="image.png" loading="lazy"><br>
-<img src="https://cdn.jsdelivr.net/gh/Kagurain/StaticLib@main/Pics/s47kpUjmQfl5vI9.png" alt="image.png" loading="lazy"></p>
+<p>对于评论系统的选择，大部分的用途在于静态网页活着静态博客等场面需要使用。本文总结了博主所知道的各个评论系统的优缺点，方便大家迅速找到适合自己的评论系统。</p>
+<h1 id="总览">总览</h1>
+<p>各个 我所知的评论系统介绍，优缺点.</p>
+<h2 id="valine">Valine</h2>
+<p>Valine算得上是评论界的老大哥了。反正据我所认知范围内有超过70%以上的朋友在使用这个系统。<br>
+<a href="https://valine.js.org/">官网</a>对于Valine的介绍是 快速、安全、Emoji 😉、无后端实现、MarkDown 全语法支持、轻量易用</p>
+<ul>
+<li>优点
+<ul>
+<li>有丰富的社区环境，更多的改造版本（如Valine-Admin这些特别有帮助的repo）</li>
+<li>搭建是完全免费的，托管在LeanCloud上你可以完全白嫖LC的服务去搭建系统</li>
+<li>高度自定义的环境，前端拥有着极多的配置函数可以提高个性化</li>
+<li>除了改造版本，还有众多基于Valine的衍生系统，很大程度上都解决了Valine上一些方面的不足</li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>由于用户量庞大，并且LeanCloud的配置信息直接暴露在前端，依旧很大程度上有安全问题的不足</li>
+<li>举几个Valine的漏洞例子：任意修改访问量 XSS问题 隐私泄露等<br>
+<img src="https://cdn.jsdelivr.net/gh/Kagurain/StaticLib@main/Pics/20201213094620.png" alt="" loading="lazy"></li>
+</ul>
+</li>
+</ul>
+<h2 id="waline">Waline</h2>
+<p>Valine的衍生版本，目前本站在用。<a href="https://waline.js.org/">官网</a>对于Waline的介绍是快速、真·安全、Markdown 语法支持、轻量易用、免费部署</p>
+<ul>
+<li>优点
+<ul>
+<li>直接给Valine加了一层服务端，解决了Valine的所有安全问题。</li>
+<li>开发者是个很负责任而且脾气好的大佬，有什么问题都会给你解决到位。</li>
+<li>不仅仅是支持LeanCloud部署，还支持CloudBase。即将支持AWS, GCP, Azure 部署支持</li>
+<li>还能上数据库评论支持 例如MySQL, MongoDB, SQLite, PostgreSQL</li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>由于Valine在1.4.0后不再提供src内容，所以Waline能复现的前端配置功能较少</li>
+<li>多了一层服务端则代表了站长要考虑两个地方的相应速度问题：站点和评论服务端<br>
+<strong>图就不附上了，具体例子可以参考本站</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="disqusdisqusjs">Disqus+DisqusJS</h2>
+<p>Disqus也是老大哥了，而<a href="https://disqusjs.skk.moe">DisqusJS</a>使用 Disqus API 渲染评论列表,是为了解决Disqus在境内被墙问题而研发出来的。</p>
+<blockquote>
+<p>DisqusJS 提供一个纯前端的、不依赖后端服务器的 Disqus 评论基础模式。</p>
+</blockquote>
+<ul>
+<li>优点
+<ul>
+<li>和其他系统一样内置了代码高亮。</li>
+<li>查看评论直接调用Disqus API，无需经过Disqus避免被墙</li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>查看评论无需扶墙，但是回复评论需要</li>
+<li>不支持MarkDown，一切都需要HTML解决。<br>
+<img src="https://cdn.jsdelivr.net/gh/Kagurain/StaticLib@main/Pics/20201213100552.png" alt="" loading="lazy"><br>
+<s>来自某位大佬博客的评论截的图</s></li>
+</ul>
+</li>
+</ul>
+<h2 id="twikoo">Twikoo</h2>
+<p>一个简洁、安全、免费的静态网站评论系统，基于腾讯云开发 <a href="https://twikoo.js.org/">官网</a>对此的介绍是免费搭建、隐私安全、支持邮件与微信通知、支持反垃圾评论</p>
+<ul>
+<li>优点
+<ul>
+<li>非常的好看，应该是这四个里面最好看的一个评论系统</li>
+<li>Admin后台直接在前端，避免再去打开多几个标签页去管理评论数据，方便站长。</li>
+<li>仅支持Tencent CloudBase部署，每个腾讯云用户都可以享受一个&quot;完全免费&quot;的实例</li>
+<li>无需类似Valine-Admin的改造版本即可实现QQ邮箱显示QQ评论</li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>未完全支持MarkDown，不支持表情包和Emoji。</li>
+<li>测试版（0.x）暂不兼容 IE11 | 正式版（1.0）会兼容 IE1<br>
+<img src="https://cdn.jsdelivr.net/gh/Kagurain/StaticLib@main/Pics/20201213100513.png" alt="" loading="lazy"></li>
+</ul>
+</li>
+</ul>
 <h1 id="结语">结语</h1>
-<p>就算没有持续开盾的需求的话，其他一般Crontab操作也可能对你的工作有很大帮助。这类厂商不仅帮助我们不用免于购买服务器的烦恼，而且还可以运行Linux或其他代码相关实例操作。综上所述，这未免不可是以后一个比较大的发展方向。</p>
+<p>目前就知道这么多了，虽然想写MiniValine的，但是没有用过就放弃了。如果有什么还好的评论系统欢迎在评论区内与我共通过探讨~</p>
 
 </div>
 </article>
@@ -158,8 +209,8 @@ echo $cResult
 
 <div class="next-post">
 <div class="next gt-c-content-color-first">下一篇</div>
-<a href="https://hexo.ink/1114-kai-zhan-xiao-jie-mi-writeups/" class="post-title gt-a-link">
-11.14 开站小解谜 WriteUp
+<a href="https://hexo.ink/ghpages-get/" class="post-title gt-a-link">
+如何使访客科学的访问你的Github Pages
 </a>
 </div>
 

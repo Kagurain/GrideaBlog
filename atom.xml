@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hexo.ink</id>
     <title>💤夜杏</title>
-    <updated>2020-12-13T02:10:22.777Z</updated>
+    <updated>2020-12-13T03:48:41.105Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hexo.ink"/>
     <link rel="self" href="https://hexo.ink/atom.xml"/>
@@ -12,8 +12,8 @@
     <rights>All rights reserved 2020, 💤夜杏</rights>
     <entry>
         <title type="html"><![CDATA[关于网页评论系统该如何选择]]></title>
-        <id>https://hexo.ink/guan-yu-wang-ye-ping-lun-xi-tong-gai-ru-he-xuan-ze/</id>
-        <link href="https://hexo.ink/guan-yu-wang-ye-ping-lun-xi-tong-gai-ru-he-xuan-ze/">
+        <id>https://hexo.ink/comments-system/</id>
+        <link href="https://hexo.ink/comments-system/">
         </link>
         <updated>2020-12-12T14:51:36.000Z</updated>
         <summary type="html"><![CDATA[<p>在开始前突然就想起了以前写博客的时候.怀念当年的Typecho，当年的人和事，当年的最初.</p>
