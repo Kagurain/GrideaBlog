@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hexo.ink</id>
     <title>💤夜杏</title>
-    <updated>2020-12-25T11:20:01.768Z</updated>
+    <updated>2020-12-25T11:31:47.005Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hexo.ink"/>
     <link rel="self" href="https://hexo.ink/atom.xml"/>
@@ -10,6 +10,36 @@
     <logo>https://hexo.ink/images/avatar.png</logo>
     <icon>https://hexo.ink/favicon.ico</icon>
     <rights>All rights reserved 2020, 💤夜杏</rights>
+    <entry>
+        <title type="html"><![CDATA[停止更新公告【2020.12.25起】]]></title>
+        <id>https://hexo.ink/ting-zhi-geng-xin-gong-gao-20201225-qi/</id>
+        <link href="https://hexo.ink/ting-zhi-geng-xin-gong-gao-20201225-qi/">
+        </link>
+        <updated>2020-12-25T11:08:56.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>停止更新.</strong></p>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>停止更新.</strong></p>
+<!-- more -->
+<p>由于博主即将期末考试，所以本站从圣诞节的今天直至放寒假的开始停止更新、<br>
+详细列一下回归后要完成的计划：</p>
+<p>更新 <code>1</code> 篇文章</p>
+<ul>
+<li>《分析免流的原理和方法》 标签：免流、定向、VPN、代理</li>
+</ul>
+<p>站点优化</p>
+<ul>
+<li>分析站点加载情况，适当减小图片容量/资源调用，提高加载率。</li>
+<li>关于页面加入“<strong>动力来源</strong>” 项目，在 “<strong>评论须知</strong>“ 内加入于 CloudBase 支持相关的内容。</li>
+<li>评论框如遇无法加载内容和回复按钮问题自动引导用户进行刷新操作。</li>
+<li>全站内容严格遵守《中文文案排版指北》中提及的内容</li>
+</ul>
+<p>站点更新</p>
+<ul>
+<li>上线新站点 ”<strong>站点服务监控探针</strong>”，监控服务包括博客主站、邮局服务、评论系统、分流 CDN 和 加速 CDN 、主站服务器</li>
+<li>站点升级到 <code>2.0</code> 版本，全面大更改，放弃 Gridea ，拥抱美好 Hexo 。使用 Volantis 作为博客主题。</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[关于网页评论系统该如何选择]]></title>
         <id>https://hexo.ink/comments-system/</id>
